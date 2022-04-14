@@ -1,0 +1,4 @@
+CREATE OR REPLACE FUNCTION ${this.name}() RETURNS integer
+LANGUAGE SQL AS $function$
+
+$function$;

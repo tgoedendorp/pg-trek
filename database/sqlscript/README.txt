@@ -1,0 +1,1 @@
+Put your SQL script files in this folder.

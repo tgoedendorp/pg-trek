@@ -1,0 +1,16 @@
+import { IMigration } from "../../src/types/Migration.ts";
+import sql from "../../src/util/sql.ts";
+
+/**
+ * ${this.migrationName}
+ */
+class ${this.className} implements IMigration {
+  async execute(): Promise<void> {
+    await sql.${this.dbObjectType.toLowerCase()}Script('${this.dbObjectName}');
+  }
+
+  async rollback(): Promise<void> {
+  }
+}
+
+export default new ${this.className}();

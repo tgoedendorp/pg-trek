@@ -1,0 +1,17 @@
+import { IMigration } from "../../src/types/Migration.ts";
+import sql from "../../src/util/sql.ts";
+
+/**
+ * ${this.migrationName}
+ */
+class ${this.className} implements IMigration {
+  async execute(): Promise<void> {
+    // await sql.query("INSERT INTO table (col1, col2) VALUES (1, 2)");
+    // await sql.file("../schema/views/public.activecustomers.sql")
+  }
+
+  async rollback(): Promise<void> {
+  }
+}
+
+export default new ${this.className}();
